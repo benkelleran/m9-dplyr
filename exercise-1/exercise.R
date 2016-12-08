@@ -12,7 +12,7 @@ devtools::install_github("hadley/fueleconomy")
 library(fueleconomy)
 
 # You should have have access to the `vehicles` data.frame
-View(vehicles)
+vehicles <- View(vehicles)
 
 # Create a data.frame of vehicles from 1997
 cars.1997 <- vehicles[vehicles$year == 1997, ]
@@ -37,3 +37,4 @@ MakeYearFilter <- function(make, year)
 # What was the most efficient honda model of 1995?
 
 MakeYearFilter('Honda', 1995)
+
